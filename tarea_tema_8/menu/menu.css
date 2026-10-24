@@ -1,0 +1,39 @@
+h1 {
+text-align: center;
+color: rgb(247, 46, 113);
+}
+
+p {
+text-align: center;
+}
+
+body {
+font-family: sans-serif;
+background-color: rgb(255, 198, 247);
+}
+
+div {
+gap: 20px;
+margin: auto;
+width: 80%;
+text-align: center;
+background-color: white;
+border-radius: 20px;
+}
+
+ul {
+margin: auto;
+
+}
+
+li {
+display: inline-block;
+margin: 15px;
+color: rgb(247, 46, 113);
+}
+
+
+
+li:hover {
+transform: scale(1,1.4);
+}

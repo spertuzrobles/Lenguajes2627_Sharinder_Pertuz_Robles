@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo de Caja</title>
+<style>
+#caja_contenido p{
+color: white;
+}
+
+#caja_contenido {
+/*Color del fondo*/
+background-color: rgb(88, 179, 88);
+/*Color del borde*/
+border-color: darkgreen;
+/*Anchura del borde*/
+border-width: 5px;
+/*Estilo del borde*/
+border-style: solid;
+/*Ancho*/
+width: 600px;
+/*Alto*/
+height: 300px;
+/*Alinea el texto en el centro*/
+text-align: center;
+/*Modifica el espacio entre lineas de texto, en este caso lo uso para colocar el texto en el centro*/
+line-height: 200px;
+/*Tamaño de la fuente de texto*/
+font-size: 25px;
+/*box-sizing determina como se va a calcular el alto y ancho de la caja, al usar boder-box el tamaño que le pongamos al elemento se respetara, 
+haciendo que el padding y el borde se calculen hacia dentro sin modificar el ancho o altura establecida*/
+box-sizing: border-box;
+/*Margen es el espacio exterior y al usar auto le decimos que lo calcule y distribuya automaticamente*/
+margin: auto;
+}
+
+#caja_margin {
+/*Color del fondo*/
+background-color: rgb(199, 199, 199);
+/*Alto*/
+height: 400px;
+/*Ancho*/
+width: 700px;
+/*box-sizing determina como se va a calcular el alto y ancho de la caja, al usar boder-box el tamaño que le pongamos al elemento se respetara, 
+haciendo que el padding y el borde se calculen hacia dentro sin modificar el ancho o altura establecida*/
+box-sizing: border-box;
+/*El padding agrega espacio interior entre el borde y el contenido, en este caso uso padding top para simular el margen ya que el margen no tiene color. */
+padding-top: 50px;
+}
+
+
+
+</style>
+</head>
+<body>
+<header><h1>Modelo de caja (Box Model)</h1></header>
+<a href="../index.html">Index</a>
+<main>
+<section>
+<p>En CSS, todo elemento es considerado como una caja rectangular. El Modelo de Caja se compone de cuatro capas: </p>
+<ul>
+<li><b>Contenido (Content):</b> El área donde se muestra el texto, imágenes u otros elementos.</li>
+<li><b>Relleno (Padding):</b> El espacio libre alrededor del contenido pero dentro del borde.</li>
+<li><b>Borde (Border):</b> La línea que rodea al padding y al contenido.</li>
+<li><b>Margen (Margin):</b> El espacio libre exterior que separa esta caja de otros elementos contiguos.</li>
+</li>
+</ul>
+
+<h2>Ejemplo</h2>
+<div id="caja_margin">
+<div id="caja_contenido">
+<p>Esto seria el contenido</p>
+</div>
+</div>
+<p>En este ejemplo el contenido seria el texto qu esta en blanco dentro de la caja. Contenido es todo lo que mostremos dentro de nuestra <b>"caja"</b>.</p>
+<p>Todo lo que esta en color verde claro seria el espacion entre nuestro contenido y el borde de la caja.</p>
+<p>El borde es la linea que encapsula el padding y el contenido.</p>
+<p>Y lo que esta en color gris representaria el margen que es el espacion exterir que separa nuestro elemento de los demas.</p>
+</section>
+</main>
+</body>
+</html>
