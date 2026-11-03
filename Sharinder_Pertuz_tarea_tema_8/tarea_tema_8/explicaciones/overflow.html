@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overflow</title>
+    <style>
+        div {
+            /* Ancho fijo de la caja */
+            width: 200px;
+            /* Alto fijo de la caja */
+            height: 100px;
+            /* Borde para ver los límites de la caja */
+            border-width: 3px;
+            border-style: solid;
+            border-color: black;
+            /* Color del fondo */
+            background-color: rgb(255, 205, 253);
+            /* Margen exterior para separar las cajas */
+            margin-bottom: 20px;
+            /*Tamaño de la fuente de texto*/
+            font-size: 20px;
+        }
+
+        #caja_overflow_visible {
+            /* visible: el contenido desborda los límites de la caja sin recortarse (es el valor por defecto) */
+            overflow: visible;
+        }
+
+        #caja_overflow_hidden {
+            /* hidden: oculta el contenido que sobrepasa las dimensiones de la caja */
+            overflow: hidden;
+        }
+
+        #caja_overflow_scroll {
+            /* scroll: genera barras de desplazamiento para poder ver todo el contenido, aunque no sean necesarias */
+            overflow: scroll;
+        }
+
+        #caja_overflow_auto {
+            /* auto: el navegador se encarga de poner barras de desplazamiento únicamente si el contenido lo requiere */
+            overflow: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Propiedad Overflow</h1>
+    </header>
+    <a href="../index.html">Index</a>
+    <main>
+        <section>
+            <p>Mediante la propiedad overflow controlamos qué debe hacerse cuando el contenido de una caja desborda su
+                tamaño:</p>
+            <ul>
+                <li><b>visible:</b> Aunque el contenido lo desborde, este se muestra fuera de la caja.</li>
+                <li><b>hidden:</b> Se oculta lo que no quepa en la caja.</li>
+                <li><b>scroll:</b> Se generan barras de desplazamiento para poder ver todo el contenido, aunque no sean
+                    necesarias.</li>
+                <li><b>auto:</b> El navegador se encarga de poner barras de scroll si es necesario.</li>
+            </ul>
+
+            <h2>Ejemplos</h2>
+            <h3>overflow: visible</h3>
+            <div id="caja_overflow_visible">
+                Este texto es muy largo y va a desbordar la caja porque el valor visible permite que se muestre fuera de
+                sus límites.
+            </div>
+
+            <h3>overflow: hidden</h3>
+            <div id="caja_overflow_hidden">
+                Este texto es muy largo y el sobrante quedará completamente oculto ya que la propiedad hidden recorta
+                todo lo que no cabe.
+            </div>
+
+            <h3>overflow: scroll</h3>
+            <div id="caja_overflow_scroll">
+                Este texto tiene barras de desplazamiento forzadas para ver el contenido excedente en todo momento.
+            </div>
+
+            <h3>overflow: auto</h3>
+            <div id="caja_overflow_auto">
+                Este texto es largo y generará barras de desplazamiento automáticas solo si el espacio lo requiere.
+            </div>
+
+            <p>En estos ejemplos podemos observar cómo reacciona el contenedor según el valor de overflow que le
+                indiquemos cuando el texto supera el tamaño establecido.</p>
+        </section>
+    </main>
+</body>
+
+</html>

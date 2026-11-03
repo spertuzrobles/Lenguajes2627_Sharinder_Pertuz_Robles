@@ -1,0 +1,48 @@
+body {
+    background-color: rgb(255, 176, 231);
+}
+
+header h2{
+    text-align: center;
+}
+
+header{
+background-color: rgb(255, 154, 231);
+
+}
+
+main {
+background-color: beige;
+height: 600px;
+padding: 5px;
+}
+
+#padre{
+    display: flex ;
+    flex-direction: column;
+    justify-content: start;
+    gap: 20px;
+    
+}
+
+#hijo1{
+background-color: blueviolet;
+height: 50px;
+width: 50px;
+}
+
+#hijo2{
+background-color: rgb(43, 226, 116);
+height: 100px ;
+width: 50px;
+}
+#hijo3{
+background-color: rgb(238, 246, 128);
+height: 50px;
+width: 70px;
+}
+#hijo4{
+background-color: rgb(129, 225, 249);
+height: 40px;
+width: 50px;
+}
